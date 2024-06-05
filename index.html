@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+</html>
+<h1 style="text-align: center;">Student Course Details Form</h1>
+<center>
+
+    <div class="inputtable">
+        <table class="t1">
+            <tr>
+                <td class="rowname">Name   :</td>
+                <td><input type="text" id="input-name" placeholder="Enter your name"></td>
+            </tr>
+            <tr>
+                <td class="rowname">Age :</td>
+                <td><input type="number" id="input-age" placeholder="Enter your age"></td>
+            </tr>
+            <tr>
+                <td class="rowname">Gender:</td>
+                <td><input name="Gender" class="input-gender" value="Male" type="radio">Male
+                    <input name="Gender" class="input-gender" value="Female" type="radio"> Female
+                </td>
+            </tr>
+            <tr>
+                <td class="rowname">course   :</td>
+                <td>
+                    <select  id="input-course">
+                        <option value="C Programming">C Programming</option>
+                        <option value="C++">C++</option>
+                        <option value="Javascript">Javascript</option>
+                        <option value="Python">Python</option>
+
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="rowname">E-mail  :</td>
+                <td><input type="email" id="input-email" placeholder="Enter your E-mail"></td>
+            </tr>
+
+        </table>
+        <table class="t2">
+            <tr>
+                <td style="width:230px;"><button id="savebutton" style="width: 230px;">save</button></td>
+            </tr>
+
+
+        </table>
+    </div>
+    <h2 class="saveddetails">Saved Details</h2>
+
+    <div class="resulttablediv">
+        <table id="t3">
+            <tr class="row">
+             <td>NAME</td><td>AGE</td><td>GENDER</td><td>COURSE</td><td>EMAIL</td><td>ACTION</td>
+            </tr>
+            <tr>
+            <td>Example</td><td>22</td><td>Male</td><td>Python</td><td>example@gmail.com</td><td><button style="text-align: center;" onclick="deleterow(event)"  class="deletebutton" id="delete-row">Delete</button></td>
+            </tr>
+        </table>
+    </div>
+
+    
+</center>
+<div class="overscreen" id="overscreen"></div>
+<div class="popupbox" id="popupbox">
+    <p>Your details are saved successfully!</p>
+    <button id="closepopup">Close</button>
+</div>
+
+<script src="script.js" >
+       
+
+</script>
+</body>
+

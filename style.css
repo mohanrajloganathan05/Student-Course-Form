@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.t1 input{
+    border: none;
+    border-bottom:solid ;
+    
+}
+.t1 input:focus{
+    outline: none;
+}
+
+.inputtable,h1{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.inputtable{
+    background-color: aliceblue;
+    width: 25%;
+    padding: 10%;
+    font-size:25px;
+    border-radius:50px;
+   
+    
+}
+
+.t2 button{
+    background-color: rgb(0, 255, 170);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    margin-top: 30px;
+   
+}
+.t2 button:hover{
+    border: rgb(42, 238, 95);
+    transform: scale(1.2);
+    font-weight: bolder;
+    transition: 1s;
+}
+.resulttablediv{
+    margin-top: 15px;
+    
+}
+.resulttablediv table,.resulttablediv td{
+    border-style: ridge;
+
+}
+
+.resulttablediv:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.saveddetails{
+
+    text-align: center;
+    margin-top:2%;
+}
+
+
+.deletebutton{
+    background-color: red;
+    color: white;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    border: none;
+}
+.deletebutton:hover
+{
+    transform: scale(1.2);
+}
+
+.overscreen{
+    background-color:grey;
+    opacity: 0.7;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    bottom:0px;
+    right: 0px;
+    z-index: 1;
+    display: none;
+   
+}
+.popupbox{
+    z-index: 2;
+    background-color: white;
+   
+    width: 18%;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    border-radius: 10px;
+    padding: 30px;
+    display: none;
+    vertical-align: top;
+    
+}
+
+#closepopup{
+    background-color: rgb(0, 255, 170);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 50px;
+    margin-top: 30px;
+   
+}
+
+#closepopup:hover{
+    border: rgb(42, 238, 95);
+    transform: scale(1.2);
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1200px) {
+    .inputtable {
+        width: 50%;
+        padding: 5%;
+        font-size: 22px;
+    }
+
+    .popupbox {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .inputtable {
+        width: 70%;
+        padding: 5%;
+        font-size: 20px;
+    }
+
+    .popupbox {
+        width: 50%;
+    }
+
+    .t2 button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .inputtable {
+        width: 90%;
+        padding: 2%;
+        font-size: 18px;
+    }
+
+    .popupbox {
+        width: 70%;
+        top: 20%;
+    }
+
+    .t2 button {
+        width: 100%;
+    }
+}
