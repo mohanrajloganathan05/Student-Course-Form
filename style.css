@@ -78,19 +78,18 @@
     transform: scale(1.2);
 }
 
-.overscreen{
-    background-color:grey;
+.overscreen {
+    background-color: grey;
     opacity: 0.7;
-    position: absolute;
+    position: fixed; /* Use fixed positioning to cover the entire viewport */
     height: 100%;
     width: 100%;
-    top: 0px;
-    left: 0px;
-    bottom:0px;
-    right: 0px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     z-index: 1;
-    display: none;
-   
+    display: none; /* Initially hidden */
 }
 .popupbox{
     z-index: 2;
