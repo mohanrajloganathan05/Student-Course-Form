@@ -162,7 +162,7 @@
 @media (max-width: 480px) {
     .inputtable {
         width: 90%;
-        padding: 5%;
+        padding: 2%;
         font-size: 18px;
     }
 
@@ -170,24 +170,6 @@
         width: 70%;
         top: 20%;
     }
-
-    .t2 button {
-        width: 100%;
-    }
-
-    .t1 {
-        font-size: 16px;
-    }
-
-    .t1 td {
-        display: block;
-        width: 100%;
-    }
-
-    .t1 td input, .t1 td select {
-        width: 100%;
-    }
-}
 
     .t2 button {
         width: 100%;
