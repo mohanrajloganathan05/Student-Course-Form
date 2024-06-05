@@ -133,13 +133,17 @@
 
 @media (max-width: 1200px) {
     .inputtable {
-        width: 50%;
+        width: 40%;
         padding: 5%;
         font-size: 22px;
     }
 
     .popupbox {
         width: 30%;
+    }
+    .resulttablediv{
+        width: 70%;
+        padding: 5%;
     }
 }
 
@@ -161,17 +165,21 @@
 
 @media (max-width: 480px) {
     .inputtable {
-        width: 90%;
+        width: 100%;
         padding: 2%;
         font-size: 18px;
+                
     }
 
     .popupbox {
-        width: 70%;
+        width: 100%;
         top: 20%;
     }
 
     .t2 button {
+        width: 100%;
+    }
+    .resulttablediv{
         width: 100%;
     }
 }
